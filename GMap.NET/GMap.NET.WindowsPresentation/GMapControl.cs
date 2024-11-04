@@ -1274,7 +1274,7 @@ namespace GMap.NET.WindowsPresentation
                 if (maxZoom > 0)
                 {
                     var center =
-                        new PointLatLng(rect.Lat - rect.HeightLat / 2, rect.Lng + rect.WidthLng / 2);
+                        new PointLatLng(rect.Lat + rect.HeightLat / 2, rect.Lng + rect.WidthLng / 2);
                     Position = center;
 
                     if (maxZoom > MaxZoom)
